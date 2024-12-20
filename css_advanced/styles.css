@@ -2,19 +2,11 @@
 * {
     margin: 0;
     padding: 0;
-    border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
 }
 /* general body specifications */
 body {
     display: flex;
     flex-direction: column;
-    background-size: cover;
-    font-family: 'open sans' sans-serif ;
-    background-repeat: no-repeat;
-    overflow: auto; 
 }
 
 /* styling section1 */
@@ -22,8 +14,6 @@ body {
    /* adding the background image to the header and main section */
    .section1 {
     background-image: url(Object.png);
-    display: flex;
-    flex-direction: column;
    }
 
 /* styling the entire header */
@@ -66,13 +56,13 @@ nav {
     padding: 15px;
 }
 
-/* to align the newly adjusted name to the logo */
+/* to align the the logo to newly adjusted name */
 .svg-header {
     padding: 15px;
 }
 
+ /* getting the contents of this div in a straight line by flexing the display*/
 .header2{    
-    /* getting the contents of this div in a straight line by flexing the display*/
     display: flex;  
     padding: 10px;
 }
@@ -92,7 +82,7 @@ nav {
 
 /* changing the hoover color of the header */
 .header2 li a:hover {
-    color: black;
+    color: #c56fff;
 }
 /* header done and dusted */
 
@@ -114,7 +104,7 @@ nav {
     color: #fafafa;
     font-size: 9vmax;
     line-height: 1;
-    margin-left: 300px;
+    margin-left: 420px;
     margin-top: 25px;
     font-weight: bolder;
 }
@@ -130,7 +120,7 @@ nav {
     line-height: 1;
     font-weight: 400;
     margin-top: 10px;
-    margin-left: 450px;
+    margin-left: 500px;
 }
 
 /* changing the hoover color of the span li */
@@ -143,12 +133,150 @@ button {
     cursor: pointer;
     background-color: #c56fff;
     color: #fafafa;
-    font-size: 15px;
-    padding: 10px;
+    font-size: 16px;
+    padding: 10px 20px;
     margin-top: 30px;
-    border-radius: 50px;
-    /* box-shadow: rgb(18, 17, 17);
-    border: rgb(36, 34, 34); */
-    margin-left: 570px;
+    border-radius: 50px; /* Optional, for rounded corners */
+    margin-left: 670px;
+    cursor: pointer;
+    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects *//
+ }
 
+ /* styling the (h2,pictures and p tag) last part of the main section/section 1 */
+ .main2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 200px;
+    margin-top: 100px;
+ }
+
+ /* styling the h2 element in main2 */
+ .main2 h2 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-left: 150px;
+ }
+
+ /* styling just the first word in h2 purple */
+ .main2 h2 span {
+    color: #c56fff;
+ }
+
+ /* styling the pictures in main-main3 */
+ .main3 {
+    display: flex;
+    flex: 10px 10px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+ }
+
+ /* Spacing all the divs in main3 appriopriately */
+ .main3 div {
+    margin: 45px;
+ }
+
+ /* styling all the h3 in the main3 */
+ .main3 h3 {
+    color: #f7ffff;
+    font-weight: 900;
+ }
+
+ /* styling all p elements in main3  */
+ .main3 p {
+    color: #f7ffffac;
+    
+ }
+ /* Section1 done and dusted */
+
+ /* styling section2 parent section and adding the background colour purple */
+ .section2 {
+    background: #c56fff;
+    width: 100%;
+ }
+
+ /* styling the sub parent div containg both the image and text section2.1  and centering the content */
+ .section2-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+ }
+
+
+ /* styling the section2 image  */
+ .section2-img {
+    margin: 20px;
+ }
+
+ /* styling the section2 text */
+ .section2-text {
+    margin: 20px;
+    padding: 20px;
+    line-height: 1.5;   
+ }
+
+ /* styling section2 text blockquote */
+ .section2-text blockquote {
+    font-size: 21px;
+    margin-bottom: 15px;
+    color: #f7ffffca;
+ }
+
+ /* styling section2 text h3 */
+ .section2-text h3 {
+    font-size: 21px;
+    color: #f7ffff;
+    font-weight: bold;
+ }
+
+ /* styling section2 text p */
+ .section2-text p {
+    font-size: 21px;
+    color: #f7ffffca;
+ }
+ /* Section2 done and dusted */
+
+ /* Styling section3 */
+ .section3 {
+    background: white;
+ }
+
+ /* styling tthe section3 h2 */
+ .section3 h2 {
+    font-size: 30px;
+    margin-top: 30px;
+    width: 100%;
+    text-align: center;
+ }
+
+ /* styling the middle word of the h2 text purple */
+ .section3 h2 span {
+    color: #c56fff;
+ }
+
+ /* styling the sub parent div section3-1 and putting the contents of the 4 divs inside in a row */
+ .section3-1 {
+    width: max-content;
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+ }
+
+ /* styling the divs individually so they stay in a horizontal row */
+ .divs4 {
+    flex: 1;
+    max-width: 25%;
+ }
+
+ /* arranging all the stars in a row */
+ .stars {
+    display: flex;
+    flex-direction: row;
  }
