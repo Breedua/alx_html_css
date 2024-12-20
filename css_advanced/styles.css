@@ -54,7 +54,7 @@ nav {
 
 /* styling the company name */
 .header1 h2{
-    font-weight: bolder;
+    font-weight: 500;
     margin: 3px;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     align-items: center;
@@ -91,7 +91,7 @@ nav {
 }
 
 /* changing the hoover color of the header */
-.header li a:hover {
+.header2 li a:hover {
     color: black;
 }
 /* header done and dusted */
@@ -108,15 +108,31 @@ nav {
     align-items: center;
 }
 
-/* styling the text div */
+/* styling the h1 text div inside hero1 */
 .h1-hero {
     font-weight: 900;
     color: #fafafa;
-    font-size: 8vmax;
+    font-size: 9vmax;
     line-height: 1;
-    margin-left: 260px;
+    margin-left: 300px;
     margin-top: 25px;
     font-weight: bolder;
-
-
 }
+
+/* styling the span div inside hero1  */
+.span {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #fafafa;
+    font-size: 19px;
+    line-height: 1;
+    font-weight: 400;
+    margin-top: 10px;
+    margin-left: 450px;
+}
+
+/* changing the hoover color of the span li */
+.span :hover {
+    color: black;
