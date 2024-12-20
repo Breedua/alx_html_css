@@ -129,7 +129,7 @@ nav {
 }
 
 /* styling the buttons */
-button {
+.first-button {
     cursor: pointer;
     background-color: #c56fff;
     color: #fafafa;
@@ -251,9 +251,10 @@ button {
  /* styling tthe section3 h2 */
  .section3 h2 {
     font-size: 30px;
-    margin-top: 30px;
+    margin-top: 100px;
     width: 100%;
     text-align: center;
+    color: rgba(0, 0, 0, 0.612);
  }
 
  /* styling the middle word of the h2 text purple */
@@ -266,17 +267,153 @@ button {
     width: max-content;
     display: flex;
     flex-direction: row;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin: 80px;
+    margin-left: 180px;
  }
 
- /* styling the divs individually so they stay in a horizontal row */
+ /* styling the divs individually so they stay in a horizontal row as well as pllacing the play button in the middle of the image*/
  .divs4 {
     flex: 1;
     max-width: 25%;
+    position: relative; /* Establish a positioning context */
+    margin: 20px;
  }
 
- /* arranging all the stars in a row */
+ /* since there are 2 images, the larger image should fill up the space */
+/* while the smaller image should be centered */
+.smaller-img {
+   position: absolute; /* Position relative to the container */
+   top: 50%; /* Move to the center vertically */
+   left: 50%; /* Move to the center horizontally */
+   transform: translate(-80%, -230%); /* Adjust for the smaller image's size */
+   width: 50px; /* Adjust the size of the smaller image */
+
+ }
+
+
+/* styling the h3 in divs4 */
+.divs4 h3 {
+   color: black;
+   font-size: 18px;
+   font-weight: bold;
+   margin: 7px;
+}
+
+/* styling the p in divs4 */
+.divs4 p {
+   color: #56575a;
+   font-size: 13px;
+   margin: 7px;
+   line-height: 1.5;
+}
+
+/* styling divs4 h4 and image div */
+.img4 {
+   margin: 7px;
+   display: flex;
+   flex-direction: row;
+   align-items: flex-start;
+}
+
+/* styling the h4 alone */
+.img4 h4 {
+   font-size: 13px;
+   color: #c56fff;
+   margin-left: 15px;
+   padding: 6px;
+}
+
+ /* arranging all the stars in a row and adding colour */
  .stars {
     display: flex;
     flex-direction: row;
+    color: #c56fffa8;
+    margin: 7px;
  }
+
+ /* styling the last star with a seperate colour */
+ .stars span {
+   color: #dadadfce;
+ }
+
+ /* styling the last p in .stars */
+ .stars p {
+   color: #c56fff;
+   margin-left: 60px;
+}
+/* Section3 done and dusted */
+
+/* styling section4 */
+/* adding a black background colour */
+.section4 {
+   background: rgb(31, 30, 30);
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+/* styling section4 h2 */
+.section4 h2 {
+   color: #dce0e3;
+   text-align: center;
+   margin-top: 80px;
+}
+
+/* stylind the first word of h2 a different colour */
+.section4 h2 span {
+   color: #c56fff;
+}
+
+/* styling all the divs into a horizontal row */
+.section4-1 {
+   display: flex;
+   flex-direction: row;
+   margin: 30px;
+   width: 80%;
+   margin-left: 140px;
+}
+
+/* styling the individual divs in section4-1 */
+.smile {
+   margin: 20px;
+}
+
+/* styling the images in section4 */
+.smile img {
+   margin-left: 70px;
+   margin-top: 20px;
+}
+
+/* styling the h3 of the div smile */
+.smile h3 {
+   color: #dce0e3;
+   text-align: center;
+   margin-top: 20px;
+   margin-right: 50px;
+}
+
+/* styling the p of the div smile */
+.smile p {
+   color: #dce0e3c1;
+   margin-top: 15px;
+   line-height: 1.5;
+}
+
+/* styling the last button */
+.last-button {
+   width: 18%;
+   margin-bottom: 70px;
+   cursor: pointer;
+   background-color: #c56fff;
+   color: #fafafa;
+   font-size: 16px;
+   padding: 10px 20px;
+   margin-top: 30px;
+   border-radius: 50px; /* Optional, for rounded corners */
+   margin-left: 550px;
+   cursor: pointer;
+   box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+   transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects *//
+}
