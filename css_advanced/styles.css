@@ -1,0 +1,122 @@
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* general body specifications */
+body {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    font-family: 'open sans' sans-serif ;
+    background-repeat: no-repeat;
+    overflow: auto; 
+}
+
+/* styling section1 */
+
+   /* adding the background image to the header and main section */
+   .section1 {
+    background-image: url(Object.png);
+    display: flex;
+    flex-direction: column;
+   }
+
+/* styling the entire header */
+
+/* General styling of the header and making the full header fixed and immovable and not touch the sides of the screen */
+header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    margin: 100px;
+    margin-top: 20px;
+}
+
+/* spacing the 2 divs in the header appropriately */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+   /* getting the contents of this div in a straight line by flexing the display*/
+.header1{
+    display: flex;
+    margin: 10px;
+}
+
+/* styling the company name */
+.header1 h2{
+    font-weight: bolder;
+    margin: 3px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    color: #feffff;
+}
+
+/* to create space between the logo and the name */
+.header-name {
+    padding: 15px;
+}
+
+/* to align the newly adjusted name to the logo */
+.svg-header {
+    padding: 15px;
+}
+
+.header2{    
+    /* getting the contents of this div in a straight line by flexing the display*/
+    display: flex;  
+    padding: 10px;
+}
+
+/* spacing between each list item and removing the dots */
+.header2 li{
+    list-style: none;
+    padding: 12px;
+}
+
+/* changing the anchor tag text colour */
+.header2 li a {
+    text-decoration: none;
+    color: #dce0e3;
+    font-weight: 500;
+}
+
+/* changing the hoover color of the header */
+.header li a:hover {
+    color: black;
+}
+/* header done and dusted */
+
+/* styling the main section still in section1 but the actual hero section */
+
+.hero {
+    width: 80%;
+    overflow: hidden;
+    margin: 10px;
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* styling the text div */
+.h1-hero {
+    font-weight: 900;
+    color: #fafafa;
+    font-size: 8vmax;
+    line-height: 1;
+    margin-left: 260px;
+    margin-top: 25px;
+    font-weight: bolder;
+
+
+}
