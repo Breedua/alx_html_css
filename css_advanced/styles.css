@@ -348,7 +348,7 @@ nav {
 /* styling section4 */
 /* adding a black background colour */
 .section4 {
-   background: rgb(31, 30, 30);
+   background: #071629;
    display: flex;
    flex-direction: column;
    width: 100%;
@@ -372,7 +372,7 @@ nav {
    flex-direction: row;
    margin: 30px;
    width: 80%;
-   margin-left: 140px;
+   margin-left: 150px;
 }
 
 /* styling the individual divs in section4-1 */
@@ -416,4 +416,90 @@ nav {
    cursor: pointer;
    box-shadow: 5px 10px 5px rgba(0, 0, 0, 0.5); /* Prominent shadow */
    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth hover effects *//
+}
+/* Section4 done and dusted */
+
+/* styling section5 */
+/* adding the white background colour */
+.section5 {
+   background: white;
+}
+
+/* styling section5 h2 */
+.section5 h2 {
+   color: rgba(0, 0, 0, 0.653);
+   text-align: center;
+   margin-top: 60px;
+   font-size: 45px;
+}
+
+/* styling both divs of 2 into a horizontal row making a box of 4 */
+.row {
+   display: flex;
+   flex-direction: row;
+   width: 85%;
+   justify-content: space-around;
+   margin-left: 105px;
+   margin-top: 70px;
+}
+
+/* styling 2 divs togrther as a vertical column to later be group styled as rows which form grids/boxwa */
+.column {
+   display: flex;
+   flex-direction: column;
+}
+
+/* styling all the h3 in column */
+.column1 {
+   line-height: 4;
+   font-weight: bolder;
+}
+
+/* styling the text div */
+.column2 {
+   font-size: 15px;
+   color: #56575aa4;
+   line-height: 1.5;
+}
+/* section5 done and dusted */
+
+/* last section - Styling of the Footer  */
+footer {
+   background: #071629;
+    cursor: pointer;
+}
+
+.last-footer {
+   margin: 30px;
+}
+
+/* arranging the section */
+.foot {
+   display: flex;
+   flex-direction: row;
+   width: 80%;
+   margin-left: 120px;
+}
+
+/* arranging the svg in footer */
+.foot svg {
+   align-items: flex-start;
+   margin: 10px;
+}
+
+.foot h5 {
+   color: #dce0e3;
+   margin: 10px;
+   font-weight: bolder;
+}
+
+/* arranging the icons in footer */
+.icons i {
+   color: white;
+   margin-left: 200px;
+}
+
+.pfoot {
+   color: #dce0e369;
+   text-align: center;
 }
