@@ -143,12 +143,6 @@ nav {
     transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
  }
 
- /* changing the hoover color of the buttons, (this did not work.... YET!!!) */
- .first-button, .last-button :hover {
-   background-color: black;
-   color: red;
-}
-
  /* styling the (h2,pictures and p tag) last part of the main section/section 1 */
  .main2 {
     display: flex;
