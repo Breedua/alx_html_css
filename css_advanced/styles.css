@@ -289,8 +289,7 @@ nav {
    left: 50%; /* Move to the center horizontally */
    transform: translate(-80%, -230%); /* Adjust for the smaller image's size */
    width: 50px; /* Adjust the size of the smaller image */
-
- }
+}
 
 
 /* styling the h3 in divs4 */
