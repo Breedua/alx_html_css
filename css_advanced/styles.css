@@ -44,7 +44,7 @@ nav {
 
 /* styling the company name */
 .header1 h2{
-    font-weight: 500;
+    font-weight: 100;
     margin: 3px;
     font-family: Impact, 'Arial Narrow Bold', sans-serif;
     align-items: center;
@@ -287,9 +287,9 @@ nav {
    position: absolute; /* Position relative to the container */
    top: 50%; /* Move to the center vertically */
    left: 50%; /* Move to the center horizontally */
-   transform: translate(-80%, -230%); /* Adjust for the smaller image's size */
+   transform: translate(-80%, -190%); /* Adjust for the smaller image's size */
    width: 50px; /* Adjust the size of the smaller image */
-}
+ }
 
 
 /* styling the h3 in divs4 */
@@ -341,6 +341,7 @@ nav {
  .stars p {
    color: #c56fff;
    margin-left: 60px;
+   margin-top: -2px;
 }
 /* Section3 done and dusted */
 
@@ -440,6 +441,7 @@ nav {
    justify-content: space-around;
    margin-left: 105px;
    margin-top: 70px;
+   margin-bottom: 90px;
 }
 
 /* styling 2 divs togrther as a vertical column to later be group styled as rows which form grids/boxwa */
@@ -469,36 +471,63 @@ footer {
 }
 
 .last-footer {
-   margin: 30px;
+   margin: 14px;
 }
 
-/* arranging the section */
+/* arranging the div foot */
 .foot {
    display: flex;
    flex-direction: row;
    width: 80%;
-   margin-left: 120px;
+   margin-top: 60px;
+   margin-left: 100px;
+   margin-bottom: 40px;
 }
 
-/* arranging the svg in footer */
+/* arranging the svg/logo in footer */
 .foot svg {
-   align-items: flex-start;
    margin: 10px;
 }
 
+/* styling the company name in the footer */
 .foot h5 {
    color: #dce0e3;
-   margin: 10px;
+   margin: 20px;
    font-weight: bolder;
-}
+} 
 
 /* arranging the icons in footer */
-.icons i {
+.icons {
    color: white;
-   margin-left: 200px;
+   margin-left: 740px;
+   display: flex;
+   flex-direction: row;
 }
 
+/* more arrangements for the icons in the footer and giving them more circles */
+.icons i {
+   padding: 10px;
+}
+
+/* experimenting styling the icons to be centered in a circle */
+.icon-wrapper {
+   display: inline-flex; /* Aligns the icons inline */
+   margin: 9px;
+   justify-content: center; /* Centers the icon horizontally */
+   align-items: center; /* Centers the icon vertically */
+   width: 22px; /* Adjust the size of the circle */
+   height: 22px; /* Make it a perfect circle */
+   background-color: white; /* Fill the area with white */
+   border-radius: 50%; /* Creates the circular shape */
+   color: #1f2021; /* Icon or text color */
+   font-size: 14px; /* Adjust the font size of the icon */
+ }
+
+/* Arranging and styling the last p which is the copyright and logo */
 .pfoot {
    color: #dce0e369;
    text-align: center;
-}
+   margin-right: 20px;
+   margin-bottom: 30px;
+}  
+/* Footer section done and dusted */
