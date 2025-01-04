@@ -21,8 +21,8 @@ body {
 /* General styling of the header and making the full header fixed and immovable and not touch the sides of the screen */
 header {
     display: flex;
-    position: sticky;
-    top: 0;
+    /* position: sticky;
+    top: 0; */
     cursor: pointer;
     margin: 100px;
     margin-top: 20px;
@@ -175,8 +175,13 @@ nav {
     margin-bottom: 50px;
  }
 
+ /* styling the only square image to fit with the other circular images */
+ .square-image {
+   border-radius: 50%;
+ }
+
  /* Spacing all the divs in main3 appriopriately */
- .main3 div {
+ .main3-div {
     margin: 45px;
  }
 
@@ -184,15 +189,26 @@ nav {
  .main3 h3 {
     color: #f7ffff;
     font-weight: 900;
+    margin-top: 9px;
  }
 
  /* styling all p elements in main3  */
  .main3 p {
     color: #f7ffffac;
-    
+    margin-top: 8px;
+    margin-bottom: -10px;
  }
- /* Section1 done and dusted */
 
+ /* styling the 2nd line of the p after the br.......not working yet */
+ .main3 p br {
+   display: block;
+    margin-bottom: 10px;
+ }
+ /* section 1 done and dusted */
+
+
+
+ /* Section 2 */
  /* styling section2 parent section and adding the background colour purple */
  .section2 {
     background: #c56fff;
