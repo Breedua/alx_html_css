@@ -1,4 +1,5 @@
 /* styling project headphones, my most complicated html/css project so far */
+
 /* Reset css */
 * {
     margin: 0;
@@ -9,6 +10,10 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
+
+
 
 /* styling section1 */
 
