@@ -13,3 +13,6 @@ body {
 /* styling section1 */
 
    /* adding the background image to the header and main section */
+   .section1 {
+    background-image: url(headphones-hero-1.jpg);
+   }
