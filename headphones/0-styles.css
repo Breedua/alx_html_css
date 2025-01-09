@@ -1,0 +1,15 @@
+/* styling project headphones, my most complicated html/css project so far */
+/* Reset css */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* general body specifications */
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* styling section1 */
+
+   /* adding the background image to the header and main section */
