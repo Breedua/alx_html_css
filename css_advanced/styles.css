@@ -199,11 +199,8 @@ nav {
     margin-bottom: -10px;
  }
 
- /* styling the 2nd line of the p after the br.......not working yet */
- .main3 p br {
-   display: block;
-    margin-bottom: 10px;
- }
+ /* styling the 2nd line of the p after the br.......not working yet, still figuring this out */
+ 
  /* section 1 done and dusted */
 
 
