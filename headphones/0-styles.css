@@ -120,3 +120,21 @@ h4 {
     box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
     transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
  }
+
+ /* styling section 2 */
+ .image-text {
+    display: flex;
+    flex-direction: row;
+ }
+
+ /* styling section 3 */
+ .section3 {
+    background-image: url(headphones_hero_2.jpg);
+    display: flex;
+    flex-direction: column;
+ }
+
+ /* styling section 5 */
+ .section5 {
+    background: gray;
+ }
