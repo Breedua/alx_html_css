@@ -18,18 +18,23 @@ body {
 /* styling section1 */
 
    /* adding the background image to the header and main section */
-   .section1 {
+.section1 {
     background-image: url(headphones-hero-1.jpg);
-   }
+}
 
-   /* styling the entire header */
+.section1-1 {
+    margin-bottom: 30px;
+}
 
-/* General styling of the header and making the full header fixed and immovable and not touch the sides of the screen */
+   /* styling the header */
+
+/* General styling of the header and making the full header not touch the sides of the screen */
 header {
     display: flex;
     cursor: pointer;
-    margin: 100px;
-    margin-top: 20px;
+    margin: 189px;
+    margin-top: 18px;
+    font-family: SourceSansPro-Bold;
 }
 
 /* spacing the 2 divs in the header appropriately */
@@ -62,7 +67,7 @@ nav {
 .header2 li a {
     text-decoration: none;
     color: #dce0e3;
-    font-weight: 500;
+    font-weight: bold;
 }
 
 /* changing the hoover color of the header */
@@ -73,53 +78,58 @@ nav {
 
 /* styling the main section still in section1 but the actual hero section */
 .hero {
-    width: 80%;
+    width: 90%;
     overflow: hidden;
     margin: 10px;
     display: flex;  
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    font-family: source-sans-pro;
 }
 
 /* styling the h1 text div inside hero1 */
 .h1-hero {
-    font-weight: 900;
     color: #fafafa;
-    font-size: 9vmax;
+    font-size: 30px;
     line-height: 1;
-    margin-left: 420px;
-    margin-top: 25px;
+    margin-left: 390px;
+    margin-top: 110px;
     font-weight: bolder;
 }
 
-/* styling the span div inside hero1  */
+/* styling the h4 div inside hero1  */
 h4 {
     text-align: center;
-    justify-content: space-evenly;
-    color: #fafafa;
-    font-size: 19px;
-    line-height: 1;
-    font-weight: 400;
+    color: #fafafad2;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: 700;
     margin-top: 10px;
-    margin-left: 500px;
+    margin-left: 205px;
 }
 
 /* styling the buttons */
 .first-button {
     cursor: pointer;
-    background-color: #c56fff;
+    background-color: #FF6565;
     color: #fafafa;
     font-size: 16px;
     padding: 10px 20px;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 50px; /* Optional, for rounded corners */
-    margin-left: 670px;
+    margin-left: 590px;
     cursor: pointer;
     box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
     transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
  }
+ .first-button :hover {
+    opacity: 0.9;
+ }
+
+ .section1-h4 {
+    margin-top: 70px;
+    margin-bottom: 100px;
+ }
+ /* End of section1 styling */
 
  /* styling section 2 */
  .image-text {
