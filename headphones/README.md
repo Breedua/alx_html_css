@@ -15,7 +15,7 @@ Project Overview
  
 
 Tasks Breakdown
- 0. Be Familiar with Figma
+0. Be Familiar with Figma
  
 Objective: Get accustomed to Figma as the design tool for this project.
 
@@ -24,7 +24,7 @@ Instructions:
  Install required fonts: Source Sans Pro and Spin Cycle OT.
  Handle float values in the design by rounding them off as needed.
 
- 1. Header
+1. Header
    
 Objective: Build the header/hero section with a responsive and semantic structure.
 
@@ -35,7 +35,7 @@ Tips:
  Keep selectors simple and generic.
  Follow the "outside-in, top-to-bottom" approach when building components.
 
- 3. "What We Do..." Section
+2. "What We Do..." Section
     
 Objective: Create the "What We Do..." section with custom font icons.
 
@@ -45,27 +45,27 @@ Tips:
  Use modular components for reusability.
  Reference the demo page for font icon usage.
 
- 5. "Our Results" Section
+3. "Our Results" Section
   
 Objective: Build the "Our Results" section while reusing components from the previous tasks.
 
 
- 6. Contact Us
+4. Contact Us
    
 Objective: Add a contact form to the landing page, ensuring user interactivity.
 
 Tips:
  Include animations and constraints for input fields for a modern look and feel.
 
- 7. Footer
+5. Footer
    
 Objective: Complete the landing page by building a responsive footer.
 
- 8. Replace Background Image with Code
+6. Replace Background Image with Code
      
 Objective: Replace the background image in the "Our Results" section by drawing pentagons using HTML and CSS.
 
- 9. Let's Animate Items
+7. Let's Animate Items
     
 Objective: Add animations to the "What We Do..." and "Our Results" sections.
 
