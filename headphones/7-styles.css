@@ -54,10 +54,6 @@ body {
     margin: 20px;
 }
 
-.section1-1 {
-    margin-bottom: 30px;
-}
-
    /* styling the header */
 
 /* General styling of the header and making the full header not touch the sides of the screen */
@@ -75,12 +71,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-/* getting the contents of this div in a straight line by flexing the display*/
-.header1{
-    display: flex;
-    margin: 10px;
 }
 
  /* getting the contents of this div in a straight line by flexing the display*/
