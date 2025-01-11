@@ -34,7 +34,7 @@ Tips:
  Follow the "outside-in, top-to-bottom" approach when building components.
 
  3. "What We Do..." Section
- 4. 
+    
 Objective: Create the "What We Do..." section with custom font icons.
 
 Assets: holberton_school-icon.zip
@@ -43,27 +43,27 @@ Tips:
  Use modular components for reusability.
  Reference the demo page for font icon usage.
 
- 6. "Our Results" Section
+ 5. "Our Results" Section
   
 Objective: Build the "Our Results" section while reusing components from the previous tasks.
 
 
- 7. Contact Us
+ 6. Contact Us
    
 Objective: Add a contact form to the landing page, ensuring user interactivity.
 
 Tips:
  Include animations and constraints for input fields for a modern look and feel.
 
- 8. Footer
+ 7. Footer
    
 Objective: Complete the landing page by building a responsive footer.
 
- 9. Replace Background Image with Code
+ 8. Replace Background Image with Code
      
 Objective: Replace the background image in the "Our Results" section by drawing pentagons using HTML and CSS.
 
- 10. Let's Animate Items
+ 9. Let's Animate Items
     
 Objective: Add animations to the "What We Do..." and "Our Results" sections.
 
