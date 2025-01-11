@@ -1,160 +1,34 @@
-/* styling project headphones, my most complicated html/css project so far */
-
-/* Reset css */
+/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
 }
 
-/* Adding the recommended fonts SourceSanspRO */
+/* Adding the recommended fonts SourceSansPrO */
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('./source-sans-pro/SourceSansPro-Bold.otf') format('truetype');
+    src: url('./source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Adding recommended fonts SpinCycleOT*/
+  @font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('./Spin-Cycle-OT/spincycle_3d_ot.otf') format('opentype');
     font-weight: bold;
     font-style: normal;
   }
 
-/* general body specifications */
-body {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-/* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
-
-
-
-/* styling section1 */
-
-   /* adding the background image to the header and main section */
-.section1 {
-    background-image: url(./images/headphones_hero_1.jpg);
-}
-
-.section1-1 {
-    margin-bottom: 30px;
-}
-
-   /* styling the header */
-
-/* General styling of the header and making the full header not touch the sides of the screen */
-header {
-    display: flex;
-    cursor: pointer;
-    margin: 189px;
-    margin-top: 18px;
-    font-family: SourceSansPro-Bold;
-}
-
-/* spacing the 2 divs in the header appropriately */
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-/* getting the contents of this div in a straight line by flexing the display*/
-.header1{
-    display: flex;
-    margin: 10px;
-}
-
- /* getting the contents of this div in a straight line by flexing the display*/
- .header2{    
-    display: flex;  
-    padding: 10px;
-}
-
-/* spacing between each list item and removing the dots */
-.header2 li{
-    list-style: none;
-    padding: 12px;
-}
-
-/* changing the anchor tag text colour */
-.header2 li a {
-    text-decoration: none;
-    color: #dce0e3;
-    font-weight: bold;
-}
-
-/* changing the hoover color of the header */
-.header2 li a:hover {
-    color: #c56fff;
-}
-/* header done and dusted */
-
-/* styling the main section still in section1 but the actual hero section */
-.hero {
-    width: 90%;
-    overflow: hidden;
-    margin: 10px;
-    display: flex;  
-    flex-direction: column;
-    align-items: center;
-}
-
-/* styling the h1 text div inside hero1 */
-.h1-hero {
-    color: #fafafa;
-    font-size: 30px;
-    line-height: 1;
-    margin-left: 390px;
-    margin-top: 110px;
-    font-weight: bolder;
-}
-
-/* styling the h4 div inside hero1  */
-h4 {
-    text-align: center;
-    color: #fafafad2;
-    font-size: 18px;
-    line-height: 1.5;
-    font-weight: 700;
-    margin-top: 10px;
-    margin-left: 205px;
-}
-
-/* styling the buttons */
-.first-button {
-    cursor: pointer;
-    background-color: #FF6565;
-    color: #fafafa;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 50px; /* Optional, for rounded corners */
-    margin-left: 590px;
-    cursor: pointer;
-    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
-    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
- }
- .first-button :hover {
-    opacity: 0.9;
- }
-
- .section1-h4 {
-    margin-top: 70px;
-    margin-bottom: 100px;
- }
- /* End of section1 styling */
-
- /* styling section 2 */
- .image-text {
-    display: flex;
-    flex-direction: row;
- }
-
- /* styling section 3 */
- .section3 {
-    background-image: url(./images/headphones_hero_2.jpg);
-    display: flex;
-    flex-direction: column;
- }
-
- /* styling section 5 */
- .section5 {
-    background: gray;
- }
+  @font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('./Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
