@@ -5,10 +5,20 @@
     margin: 0;
     padding: 0;
 }
+
+/* Adding the recommended fonts SourceSanspRO */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./source-sans-pro/SourceSansPro-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
 /* general body specifications */
 body {
     display: flex;
     flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 /* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
@@ -19,7 +29,7 @@ body {
 
    /* adding the background image to the header and main section */
 .section1 {
-    background-image: url(headphones-hero-1.jpg);
+    background-image: url(./images/headphones_hero_1.jpg);
 }
 
 .section1-1 {
@@ -139,7 +149,7 @@ h4 {
 
  /* styling section 3 */
  .section3 {
-    background-image: url(headphones_hero_2.jpg);
+    background-image: url(./images/headphones_hero_2.jpg);
     display: flex;
     flex-direction: column;
  }
