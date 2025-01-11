@@ -1,4 +1,6 @@
-Headphones Landing Page Project
+Headphones Landing Page Project.
+
+
  Implementing from scratch, without any library, a fully responsive web page with HTML and CSS  ONLY. 
  Using HTML/CSS/Accessibility/Responsive design knowledge that you learned from previous weeks in this last project.
  
