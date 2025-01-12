@@ -43,7 +43,7 @@ body {
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
 
-/* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
+/* General styling */
 
 
 /* styling section1 */
@@ -59,8 +59,11 @@ body {
     text-align: center;
     padding: 15px 20px;
 }
+ /* End of section1 general styling */
 
 
+
+/* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
  /* Default Styles for Desktop (min-width: 1000px) */
 @media (min-width: 1000px) { 
     body {
@@ -187,12 +190,12 @@ p {
     margin-bottom: 110px;
     text-align: center;
 }
-
- /* End of section1 general styling */
-
+/* End of desktop styling */
 }
 
 
+
+/* Styling for tablet */
 /* Tablet Styles (max-width: 999px) */
 @media only screen and (min-width: 481px) and (max-width: 999px) { 
 
@@ -327,11 +330,12 @@ p {
     margin-bottom: 90px;
     text-align: center;
 }
-
- /* End of section1 general styling */
-
+ /* End of tablet styling */
 }
   
+
+
+/* styling for mobile devices */
 /* Mobile Styles (max-width: 480px) */
  @media (max-width: 480px) { 
     body {
@@ -488,9 +492,7 @@ p {
     margin-bottom: 90px;
     text-align: center;
 }
-
- /* End of section1 general styling */
-
+ /* End of styling for mobile devices */
  }
 
 
