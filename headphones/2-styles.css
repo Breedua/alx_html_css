@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distributes space between header content */
+    align-items: center; /* Vertically aligns the items */
+    margin: 0 auto; /* Centers the header horizontally */
+    padding: 10px 20px; /* Adds inner spacing to the header */
+    width: 90%; /* Restricts header width for aesthetics */
+    max-width: 960px; /* Ensures the header doesn’t get too wide */
+  }
+
+/* spacing the 2 divs in the header appropriately */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* getting the contents of the ul in a straight line by flexing the display*/
+.header2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust spacing between list items */
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    
+    margin-top: 60px;
+  }
+
+/* spacing between each list item and removing the dots */
+.header2 li {
+    list-style: none;
+    padding: 8px;
+  }
+
+/* changing the anchor tag text colour */
+.header2 li a {
+    text-decoration: none;
+    color: #dce0e3;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 14px; /* Slightly increase font size for readability */
+}
+
+/* changing the hoover color of the header */
+.header2 li a:hover, a:active {
+    color: #FF6565; /* Changes color to red on hover or active states */
+}
