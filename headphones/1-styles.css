@@ -1,0 +1,519 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Adding the recommended fonts SourceSansPrO */
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./source-sans-pro/SourceSansPro-Bold.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('./source-sans-pro/SourceSansPro-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* Adding recommended fonts SpinCycleOT*/
+  @font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('./Spin-Cycle-OT/spincycle_3d_ot.otf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Spin Cycle OT';
+    src: url('./Spin-Cycle-OT/spincycle_ot.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* general body specifications */
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', 'Spin Cycle OT' ;
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* General styling */
+
+
+/* styling section1 */
+
+   /* adding the background image to the header and main section */
+.section1 {
+    background-image: url(images/headphones_hero_1.jpg);
+    background-size: cover;
+    text-align: center;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 15px 50px;
+}
+
+/* styling section 2 */
+.section2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.section2-1 {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    text-align: center;
+
+}
+ /* End of section1 general styling */
+
+
+
+/* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
+ /* Default Styles for Desktop (min-width: 1000px) */
+@media (min-width: 1000px) { 
+    body {
+        max-width: 1000px; /* Content width limit */
+        padding: 5px; /* Add some spacing around the content */
+    }
+    
+    /* styling the header */
+/* General styling of the header and making the full header not touch the sides of the screen */
+header {
+    width: 80%;
+    display: flex;
+    cursor: pointer;
+    margin: 60px;
+    margin-top: 12px;
+    font-family: 'Source Sans Pro';
+}
+
+/* spacing the 2 divs in the header appropriately */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+/* getting the contents of the ul in a straight line by flexing the display*/
+.header2{    
+    display: flex; 
+    flex-direction: row; 
+    gap: 38px;
+}
+
+/* spacing between each list item and removing the dots */
+.header2 li{
+    list-style: none;
+    padding: 12px;
+}
+
+/* changing the anchor tag text colour */
+.header2 li a {
+    text-decoration: none;
+    color: #dce0e3;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* changing the hoover color of the header */
+.header2 li a:hover, a:active {
+    color: #FF6565; /* Changes color to red on hover or active states */
+}
+
+/* hidding the hamburger menu icon and checker */
+#check , .menu1 , .menu2 {
+    display: none;
+}
+/* header done and dusted */
+
+/* styling the main section still in section1 but the actual hero section */
+.hero {
+    margin: 10px;
+    display: flex;  
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 220px;
+}
+
+/* styling the h1 text div inside hero1 */
+.hero1 {
+    color: white;
+    font-size: 32px;
+    line-height: 1;
+    margin-top: 90px;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+/* styling the first p in the div inside hero1  */
+p {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 3px ;
+    font-weight: bold;
+    font-family:'Source Sans Pro';
+}
+
+/* styling the buttons */
+.first-button {
+    cursor: pointer;
+    background-color: #FF6565;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 40px;
+    border: none;
+    border-radius: 50px; /* Optional, for rounded corners */
+    cursor: pointer;
+    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
+ }
+
+ /* to create a lighter colour transition effect when hoovering over the button */
+ button:hover, button:active {
+    opacity: 0.9; /* Slight transparency on hover/active */
+ }
+
+ /* styling the 2nd p in inside hero1  */
+.p-hero {
+    color: rgba(255, 255, 255, 0.665);
+    font-size: 16px;
+    line-height: 1.6;
+    align-items: center;
+    font-weight: normal;
+    font-family:'Source Sans Pro';
+    display: block; /* Ensures the text block behaves as a block element */  
+    text-align: justify; /* Aligns the text evenly on both sides */
+    margin-top: 60px;
+    margin-bottom: 110px;
+    text-align: center;
+}
+/* End of desktop styling */
+}
+
+
+
+/* Styling for tablet */
+/* Tablet Styles (max-width: 999px) */
+@media only screen and (min-width: 481px) and (max-width: 999px) { 
+
+    body {
+        min-width: 481px;
+        max-width: 999px; /* Content width limit */
+        padding: 5px; /* Add some spacing around the content */
+    }
+
+    /* keeping the background image centered */
+    .section1 {
+        background-position: center center; /* Keeps the image centered for mobile */
+    }
+
+    /* styling the header */
+/* General styling of the header and making the full header not touch the sides of the screen */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distributes space between header content */
+    align-items: center; /* Vertically aligns the items */
+    margin: 0 auto; /* Centers the header horizontally */
+    padding: 10px 20px; /* Adds inner spacing to the header */
+    width: 90%; /* Restricts header width for aesthetics */
+    max-width: 960px; /* Ensures the header doesn’t get too wide */
+  }
+
+/* spacing the 2 divs in the header appropriately */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* getting the contents of the ul in a straight line by flexing the display*/
+.header2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px; /* Adjust spacing between list items */
+  }
+
+/* spacing between each list item and removing the dots */
+.header2 li {
+    list-style: none;
+    padding: 8px;
+  }
+
+/* changing the anchor tag text colour */
+.header2 li a {
+    text-decoration: none;
+    color: #dce0e3;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 14px; /* Slightly increase font size for readability */
+}
+
+/* changing the hoover color of the header */
+.header2 li a:hover, a:active {
+    color: #FF6565; /* Changes color to red on hover or active states */
+}
+
+/* hidding the hamburger menu icon and checker */
+#check , .menu1 , .menu2 {
+    display: none;
+}
+/* header done and dusted */
+
+/* styling the main section still in section1 but the actual hero section */
+.hero {
+    margin: 10px;
+    display: flex;  
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* styling the h1 text div inside hero1 */
+.hero1 {
+    color: white;
+    font-size: 32px;
+    line-height: 1;
+    margin-top: 90px;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+/* styling the first p in the div inside hero1  */
+p {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 3px ;
+    font-weight: bold;
+    font-family:'Source Sans Pro';
+}
+
+/* styling the buttons */
+.first-button {
+    cursor: pointer;
+    background-color: #FF6565;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 70px;
+    border: none;
+    border-radius: 50px; /* Optional, for rounded corners */
+    cursor: pointer;
+    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
+ }
+
+ /* to create a lighter colour transition effect when hoovering over the button */
+ button:hover, button:active {
+    opacity: 0.9; /* Slight transparency on hover/active */
+ }
+
+ /* styling the 2nd p in inside hero1  */
+.p-hero {
+    color: rgba(255, 255, 255, 0.665);
+    font-size: 16px;
+    line-height: 1.6;
+    align-items: center;
+    font-weight: normal;
+    font-family:'Source Sans Pro';
+    display: block; /* Ensures the text block behaves as a block element */  
+    text-align: justify; /* Aligns the text evenly on both sides */
+    margin-top: 75px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+ /* End of tablet styling */
+}
+  
+
+
+/* styling for mobile devices */
+/* Mobile Styles (max-width: 480px) */
+ @media (max-width: 480px) { 
+    body {
+        max-width: 480px; /* Content width limit */
+    }
+
+     /* keeping the background image centered */
+     .section1 {
+        background-position: center center; /* Keeps the image centered for mobile */
+    }
+
+    /* styling the header */
+/* General styling of the header and making the full header not touch the sides of the screen */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distributes space between header content */
+    align-items: center; /* Vertically aligns the items */
+    margin: 0 auto; /* Centers the header horizontally */
+    padding: 10px 20px; /* Adds inner spacing to the header */
+    width: 90%; /* Restricts header width for aesthetics */
+    max-width: 960px; /* Ensures the header doesn’t get too wide */
+  }
+
+/* spacing the 2 divs in the header appropriately */
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* getting the contents of the ul in a straight line by flexing the display*/
+.header2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust spacing between list items */
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 100vh;
+    position: fixed;
+    top: 10;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(67, 69, 69, 0.877);
+    transition: all 0.2s ease-in-out;
+    margin-top: 60px;
+  }
+
+/* spacing between each list item and removing the dots */
+.header2 li {
+    list-style: none;
+    padding: 8px;
+  }
+
+/* changing the anchor tag text colour */
+.header2 li a {
+    text-decoration: none;
+    color: #dce0e3;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+    font-size: 14px; /* Slightly increase font size for readability */
+}
+
+/* changing the hoover color of the header */
+.header2 li a:hover, a:active {
+    color: #FF6565; /* Changes color to red on hover or active states */
+}
+
+/* styling the hamburger menu */
+.menu1 , .menu2 {
+    position: absolute;    
+    color: white;
+    cursor: pointer;
+    font-size: 4.5rem;
+}
+
+.menu1 {
+    top: 20px;
+    right: 20px;
+}
+
+.menu2 {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+/* header done and dusted */
+
+/* styling the main section still in section1 but the actual hero section */
+.hero {
+    margin: 10px;
+    display: flex;  
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* styling the h1 text div inside hero1 */
+.hero1 {
+    color: white;
+    font-size: 32px;
+    line-height: 1;
+    margin-top: 90px;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+/* styling the first p in the div inside hero1  */
+p {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 3px ;
+    font-weight: bold;
+    font-family:'Source Sans Pro';
+}
+
+/* styling the buttons */
+.first-button {
+    cursor: pointer;
+    background-color: #FF6565;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-top: 70px;
+    border: none;
+    border-radius: 50px; /* Optional, for rounded corners */
+    cursor: pointer;
+    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
+ }
+
+ /* to create a lighter colour transition effect when hoovering over the button */
+ button:hover, button:active {
+    opacity: 0.9; /* Slight transparency on hover/active */
+ }
+
+ /* styling the 2nd p in inside hero1  */
+.p-hero {
+    color: rgba(255, 255, 255, 0.665);
+    font-size: 16px;
+    line-height: 1.6;
+    align-items: center;
+    font-weight: normal;
+    font-family:'Source Sans Pro';
+    display: block; /* Ensures the text block behaves as a block element */  
+    text-align: justify; /* Aligns the text evenly on both sides */
+    margin-top: 75px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+ /* End of styling for mobile devices */
+ }
+
+
+
+ 
+
+
+.holberton_school-icon-ic_hearing, .holberton_school-icon-ic_music, .holberton_school-icon-ic_video, .holberton_school-icon-ic_sound{
+    font-size: 20rem;
+    color: #FF6565;
+    opacity: 0.9;
+}
