@@ -52,12 +52,10 @@ body {
 .section1 {
     background-image: url(images/headphones_hero_1.jpg);
     background-size: cover;
-    background-position: center center; /* Centers the image horizontally and vertically */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
     text-align: center;
     box-sizing: border-box;
     text-align: center;
-    padding: 15px 20px;
+    padding: 15px 50px;
 }
  /* End of section1 general styling */
 
