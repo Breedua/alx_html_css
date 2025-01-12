@@ -38,13 +38,13 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Source Sans Pro', 'Spin Cycle OT' ;
-    margin: 0 auto; /* Center the content horizontally */
-    max-width: 100%;
+    margin:  0 auto; /* Center the content horizontally */
+    max-width: 1000px;
     overflow-x: hidden; /* Prevent horizontal scroll */
     justify-content: center;
     align-content: center;
+    padding: 5px; /* Add some spacing around the content */
 }
-
 /* General styling */
 
 
@@ -57,7 +57,7 @@ body {
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     width: 100%; /* Makes sure the container takes up the full width */
-    height: 100vh; /* Adjust the height as needed (e.g., 100% of the viewport height) */
+    height: 100%; /* Adjust the height as needed (e.g., 100% of the viewport height) */
     text-align: center;
     padding: 15px 50px;
     margin: 0 auto;
@@ -84,8 +84,14 @@ body {
     flex-direction: column;
     font-family: 'Source Sans Pro';
     box-sizing: border-box;
-    padding: 15px 50px;
+    background-color: white;
+    background-position: center; /* Centers the image */
+    width: 100%; /* Makes sure the container takes up the full width */
+    height: 100%; /* Adjust the height as needed (e.g., 100% of the viewport height) */
     text-align: center;
+    padding: 15px 50px;
+    margin: 0 auto;
+    margin-left: 20px;
 }
 
 .section2-1 {
@@ -118,17 +124,63 @@ body {
     color: #FF6565;
     opacity: 0.9;
 }
+
+/* styling section 3 */
+.section3 {
+    background-image: url(images/headphones_hero_2.jpg);
+    background-size: cover;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: 100%; /* Makes sure the container takes up the full width */
+    height: 100%; /* Adjust the height as needed (e.g., 100% of the viewport height) */
+    text-align: center;
+    padding: 15px 50px;
+    margin: 0 auto;
+    font-family:'Source Sans Pro' ;
+    color: white;
+}
+
+/* styling the text divs in section 3 */
+.section3-1 {
+    margin-top: 100px;
+}
+
+.section3-1 h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.section3-1 p {
+    font-size: 16px;
+    margin-top: 50px;
+    font-weight: normal;
+}
+
+.image {
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
  /* End of section1 general styling */
+
+
+
+
+
+
+
+
+
 
 
 
 /* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
  /* Default Styles for Desktop (min-width: 1000px) */
 @media (min-width: 1000px) { 
-    body {
-        max-width: 1000px; /* Content width limit */
-        padding: 5px; /* Add some spacing around the content */
-    }
+    
     
     /* styling the header */
 /* General styling of the header and making the full header not touch the sides of the screen */
@@ -273,10 +325,18 @@ p {
     margin-top: -15px;
 }
 
-
-
 /* End of desktop styling */
 }
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -447,9 +507,39 @@ p {
 }
 /* section 2 done and dusted */
 
+/* styling section 3 */
+.section3 {
+    display: flex;
+    margin-top: 80px;
+    padding: 15px 50px;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    gap: 10px; /* Optional spacing */
+    width: 100%; /* Adjust as needed */
+    margin: 0 auto 0 0; /* Top and bottom: auto; left: 0; right: auto */
+    box-sizing: content-box;
+}
+
+/* styling the images */
+.image {
+    gap: 25px;
+    flex: 1 1 calc(50% - 20px); /* 50% width minus the gap for two columns */
+    box-sizing: border-box; /* Ensure proper sizing */
+    text-align: center; /* Optional */
+}
+
  /* End of tablet styling */
 }
   
+
+
+
+
+
+
+
+
 
 
 /* styling for mobile devices */
@@ -530,11 +620,6 @@ p {
 .menu-toggle:checked + .hamburger span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
-
-
-
-
-
 
 /* header done and dusted */
 
@@ -627,6 +712,12 @@ p {
     margin-top: -15px;
 }
 /* section 2 done and dusted */
+
+/* styling section 3 */
+.image {
+    display: flex;
+    flex-direction: column;
+}
 
  /* End of styling for mobile devices */
  }
