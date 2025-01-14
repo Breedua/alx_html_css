@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Adding the recommended fonts SourceSansPrO */
@@ -36,17 +37,28 @@
   /* general body specifications */
 body {
     display: flex;
-    flex-direction: column;
     font-family: 'Source Sans Pro', 'Spin Cycle OT' ;
-    margin:  0 auto; /* Center the content horizontally */
-    max-width: 1000px;
+    margin: 0 auto; /* Center the content horizontally */
+    max-width: 100%;
     overflow-x: hidden; /* Prevent horizontal scroll */
-    justify-content: center;
-    align-content: center;
-    padding: 5px; /* Add some spacing around the content */
+    display: flex;
+    flex-direction: column;
 }
-/* General styling */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General styling */
 
 /* styling section1 */
 
@@ -54,46 +66,146 @@ body {
 .section1 {
     background-image: url(images/headphones_hero_1.jpg);
     background-size: cover;
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    width: 100%; /* Makes sure the container takes up the full width */
-    height: 100%; /* Adjust the height as needed (e.g., 100% of the viewport height) */
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
     text-align: center;
-    padding: 15px 50px;
     margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Source Sans Pro';
 }
 
-/* Navbar styling */
-.navbar {
-    position: relative;
+/* styling the header */
+/* General styling of the header and making the full header not touch the sides of the screen */
+
+header {
+    width: 80%;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+/* spacing the 2 divs in the header appropriately */
+nav {
+    width: 100%;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    color: white;
 }
 
-/* Hide the checkbox */
-.menu-toggle {
+/* getting the contents of the ul in a straight line by flexing the display*/
+.header2{    
+    display: flex; 
+    flex-direction: row; 
+    gap: 2px;
+}
+
+/* spacing between each list item and removing the dots */
+.header2 li{
+    list-style: none;
+    padding: 12px;
+}
+
+/* changing the anchor tag text colour */
+.header2 li a {
+    text-decoration: none;
+    color: #dce0e3;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+/* changing the hoover color of the header */
+.header2 li a:hover, a:active {
+    color: #FF6565; /* Changes color to red on hover or active states */
+}
+
+/* hidding the hamburger menu icon and checker */
+#check , .menu {
     display: none;
+}
+/* header done and dusted */
+
+/* styling the main section still in section1 but the actual hero section */
+.hero {
+    margin: 10px;
+    display: flex;  
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* styling the h1 text div inside hero1 */
+.hero1 {
+    color: white;
+    font-size: 32px;
+    line-height: 1;
+    margin-top: 90px;
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+/* styling the first p in the div inside hero1  */
+p {
+    color: rgba(255, 255, 255, 0.733);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-top: 3px ;
+    font-weight: bold;
+    font-family:'Source Sans Pro';
+}
+
+/* styling the buttons */
+.first-button {
+    cursor: pointer;
+    background-color: #FF6565;
+    color: white;
+    font-size: 11px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 50px; /* Optional, for rounded corners */
+    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
+    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
+ }
+
+ /* to create a lighter colour transition effect when hoovering over the button */
+ button:hover, button:active {
+    opacity: 0.9; /* Slight transparency on hover/active */
+ }
+
+ /* styling the 2nd p in inside hero1  */
+.p-hero {
+    color: rgba(255, 255, 255, 0.665);
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: normal;
+    font-family:'Source Sans Pro';
+    display: block; /* Ensures the text block behaves as a block element */  
+    margin-top: 50px;
+    text-align: center;
 }
 
 /* styling section 2 */
 .section2 {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Source Sans Pro';
-    box-sizing: border-box;
     background-color: white;
-    background-position: center; /* Centers the image */
-    width: 100%; /* Makes sure the container takes up the full width */
-    height: 100%; /* Adjust the height as needed (e.g., 100% of the viewport height) */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
     text-align: center;
-    padding: 15px 50px;
     margin: 0 auto;
-    margin-left: 20px;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Source Sans Pro';
 }
 
+/* Styling the first div with the h2 and p */
 .section2-1 {
     margin-top: 80px;
 }
@@ -102,19 +214,18 @@ body {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 60px;
-    
 }
 
 /* styling all the p in section 2 */
 .p2-1 {
     font-size: 16px;
-    color: black;
+    color: rgba(0, 0, 0, 0.737);
     font-weight: normal;
 }
 
 .p2-2 {
     font-size: 14px;
-    color: black;
+    color: rgba(0, 0, 0, 0.737);
     font-weight: normal;
 }
 
@@ -124,6 +235,7 @@ body {
     color: #FF6565;
     opacity: 0.9;
 }
+
 
 /* styling section 3 */
 .section3 {
@@ -138,6 +250,8 @@ body {
     margin: 0 auto;
     font-family:'Source Sans Pro' ;
     color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 /* styling the text divs in section 3 */
@@ -155,16 +269,6 @@ body {
     margin-top: 50px;
     font-weight: normal;
 }
-
-.image {
-    display: flex;
-    flex-direction: row;
-    gap: 60px;
-    margin-top: 50px;
-    margin-bottom: 30px;
-    justify-content: center;
-}
-
 
 /* styling section 4 */
 .section4 {
@@ -219,14 +323,14 @@ input:focus, textarea:focus {
 
 /* Call-to-Action Button */
 .second-button {
-    width: 70%;
+    width: 50%;
     background-color: #FF6565;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 11px;
     margin: 0 auto;
 }
 
@@ -234,7 +338,35 @@ button:hover {
     background-color: #676a67;
     opacity: 0.9;
 }
+
+
  /* End of section1 general styling */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -250,127 +382,10 @@ button:hover {
 /* STYLE 1 - DESKTOP STYLING(Desktops, Laptops, other large screens) */
  /* Default Styles for Desktop (min-width: 1000px) */
 @media (min-width: 1000px) { 
-    
-    
-    /* styling the header */
-/* General styling of the header and making the full header not touch the sides of the screen */
-header {
-    width: 100%;
-    display: flex;
-    cursor: pointer;
-    margin: 60px;
-    margin-top: 12px;
-    justify-content: space-between;
-    font-family: 'Source Sans Pro';
-}
-
-/* spacing the 2 divs in the header appropriately */
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-right: 150px;
-
-} 
-
-/* getting the contents of the ul in a straight line by flexing the display*/
-.header2{    
-    display: flex; 
-    flex-direction: row; 
-    gap: 30px;
-}
-
-/* spacing between each list item and removing the dots */
-.header2 li{
-    list-style: none;
-}
-
-/* changing the anchor tag text colour */
-.header2 li a {
-    text-decoration: none;
-    color: #dce0e3;
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-    font-size: 12px;
-}
-
-/* changing the hoover color of the header */
-.header2 li a:hover, a:active {
-    color: #FF6565; /* Changes color to red on hover or active states */
-}
-
-/* hidding the hamburger menu icon and checker */
-#check , .menu1 , .menu2 {
-    display: none;
-}
-/* header done and dusted */
-
-/* styling the main section still in section1 but the actual hero section */
-.hero {
-    margin: 10px;
-    display: flex;  
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 130px;
-    width: 80%;
-}
-
-/* styling the h1 text div inside hero1 */
-.hero1 {
-    color: white;
-    font-size: 32px;
-    line-height: 1;
-    margin-top: 90px;
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-}
-
-/* styling the first p in the div inside hero1  */
-p {
-    color: rgba(255, 255, 255, 0.733);
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 3px ;
-    font-weight: bold;
-    font-family:'Source Sans Pro';
-}
-
-/* styling the buttons */
-.first-button {
-    cursor: pointer;
-    background-color: #FF6565;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 40px;
-    border: none;
-    border-radius: 50px; /* Optional, for rounded corners */
-    cursor: pointer;
-    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
-    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
- }
-
- /* to create a lighter colour transition effect when hoovering over the button */
- button:hover, button:active {
-    opacity: 0.9; /* Slight transparency on hover/active */
- }
-
- /* styling the 2nd p in inside hero1  */
-.p-hero {
-    color: rgba(255, 255, 255, 0.665);
-    font-size: 16px;
-    line-height: 1.6;
-    align-items: center;
-    font-weight: normal;
-    font-family:'Source Sans Pro';
-    display: block; /* Ensures the text block behaves as a block element */  
-    text-align: justify; /* Aligns the text evenly on both sides */
-    margin-top: 60px;
-    margin-bottom: 110px;
-    text-align: center;
-}
+    body {
+        max-width: 1000px; /* Content width limit */
+        padding: 5px; /* Add some spacing around the content */
+    }
 
 /* styling section 2 */
 /* styling the div containing the icons and texts */
@@ -381,6 +396,7 @@ p {
     padding: 15px 50px;
     text-align: center;
     justify-content: space-around;
+    gap: 20px;
 }
 
 /* spacing the icons and the text */
@@ -388,15 +404,65 @@ p {
     display: flex;
     flex-direction: column;
     gap: 25px;
-    margin-bottom: 60px;
 }
 
 .p2-2 {
     margin-top: -15px;
 }
 
+/* styling section 3 */
+.image {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 15px 50px;
+    text-align: center;
+    margin-bottom: 80px;
+    justify-content: space-around;
+    gap: 20px;
+}
 /* End of desktop styling */
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -423,143 +489,47 @@ p {
     /* keeping the background image centered */
     .section1 {
         background-position: center center; /* Keeps the image centered for mobile */
+        width: 100%;
+        height: 100%;
     }
 
-    /* styling the header */
-/* General styling of the header and making the full header not touch the sides of the screen */
+    header {
+        padding: 70px 1px;
+    }
 
-header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between; /* Distributes space between header content */
-    align-items: center; /* Vertically aligns the items */
-    margin: 0 auto; /* Centers the header horizontally */
-    padding: 10px 20px; /* Adds inner spacing to the header */
-    width: 90%; /* Restricts header width for aesthetics */
-    max-width: 960px; /* Ensures the header doesn’t get too wide */
-  }
+    .hero {
+        margin-top: 200px;
+    }
 
-/* spacing the 2 divs in the header appropriately */
-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
+    .first-button {
+        margin-top: 80px;
+    }
 
-/* getting the contents of the ul in a straight line by flexing the display*/
-.header2 {
-    display: flex;
-    flex-direction: row;
-    gap: 20px; /* Adjust spacing between list items */
-  }
-
-/* spacing between each list item and removing the dots */
-.header2 li {
-    list-style: none;
-    padding: 8px;
-  }
-
-/* changing the anchor tag text colour */
-.header2 li a {
-    text-decoration: none;
-    color: #dce0e3;
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-    font-size: 14px; /* Slightly increase font size for readability */
-}
-
-/* changing the hoover color of the header */
-.header2 li a:hover, a:active {
-    color: #FF6565; /* Changes color to red on hover or active states */
-}
-
-/* hidding the hamburger menu icon and checker */
-#check , .menu1 , .menu2 {
-    display: none;
-}
-/* header done and dusted */
-
-/* styling the main section still in section1 but the actual hero section */
-.hero {
-    margin: 10px;
-    display: flex;  
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-/* styling the h1 text div inside hero1 */
-.hero1 {
-    color: white;
-    font-size: 32px;
-    line-height: 1;
-    margin-top: 90px;
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-}
-
-/* styling the first p in the div inside hero1  */
-p {
-    color: rgba(255, 255, 255, 0.733);
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 3px ;
-    font-weight: bold;
-    font-family:'Source Sans Pro';
-}
-
-/* styling the buttons */
-.first-button {
-    cursor: pointer;
-    background-color: #FF6565;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 70px;
-    border: none;
-    border-radius: 50px; /* Optional, for rounded corners */
-    cursor: pointer;
-    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
-    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
- }
-
- /* to create a lighter colour transition effect when hoovering over the button */
- button:hover, button:active {
-    opacity: 0.9; /* Slight transparency on hover/active */
- }
-
- /* styling the 2nd p in inside hero1  */
-.p-hero {
-    color: rgba(255, 255, 255, 0.665);
-    font-size: 16px;
-    line-height: 1.6;
-    align-items: center;
-    font-weight: normal;
-    font-family:'Source Sans Pro';
-    display: block; /* Ensures the text block behaves as a block element */  
-    text-align: justify; /* Aligns the text evenly on both sides */
-    margin-top: 75px;
-    margin-bottom: 90px;
-    text-align: center;
-}
+    .p-hero {
+        margin-top: 45px;
+        margin-bottom: 80px;
+    }
 
 
-/* styling section 2 */
+    /* styling section 2 */
+    .section2{
+        width: 100%;
+        height: 100%;
+    }
+
+    .section2-1 {
+        margin-top: 150px;
+    }
 /* styling the div containing the icons and texts */
 .image-text {
-    margin-top: 80px;
-    padding: 15px 50px;
+    padding: 40px 50px;
     text-align: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap; /* Allows wrapping to the next row */
     gap: 10px; /* Optional spacing */
-    width: 100%; /* Adjust as needed */
     margin: 0 auto 0 0; /* Top and bottom: auto; left: 0; right: auto */
-    width: 80%; /* Adjust width as needed */
+    width: 100%; /* Adjust width as needed */
 }
 
 /* spacing the icons and the text */
@@ -575,39 +545,94 @@ p {
 .p2-2 {
     margin-top: 15px;
 }
-/* section 2 done and dusted */
 
 /* styling section 3 */
 .section3 {
-    display: flex;
-    margin-top: 80px;
-    padding: 15px 50px;
-    text-align: center;
-    justify-content: center;
-    flex-wrap: wrap; /* Allows wrapping to the next row */
-    gap: 10px; /* Optional spacing */
-    width: 100%; /* Adjust as needed */
-    margin: 0 auto 0 0; /* Top and bottom: auto; left: 0; right: auto */
-    box-sizing: content-box;
+    width: 100%;
+    height: 100%;
 }
 
-/* styling the images */
 .image {
+    padding: 40px 50px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row */
+    gap: 10px; /* Optional spacing */
+    margin: 0 auto 0 0; /* Top and bottom: auto; left: 0; right: auto */
+    width: 100%; /* Adjust width as needed */
+}
+
+/* spacing the icons and the text */
+.image3 {
     gap: 25px;
-    flex: 1 1 calc(50% - 20px); /* 50% width minus the gap for two columns */
+    margin-bottom: 60px;
+    flex: 1 1 calc(50% - 10px); /* 50% width minus the gap for two columns */
     box-sizing: border-box; /* Ensure proper sizing */
     text-align: center; /* Optional */
 }
 
 /* styling section 4 */
 .section4 {
-    width: 60%;
-    margin: 0 auto;
-    margin-left: 180px;
+    width: 100%;
+    height: 100%;
 }
+
  /* End of tablet styling */
 }
+
+
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -625,123 +650,79 @@ p {
         max-width: 480px; /* Content width limit */
     }
 
-     /* keeping the background image centered */
-     .section1 {
-        background-position: center center; /* Keeps the image centered for mobile */
-    }
-
     /* styling the header */
 /* General styling of the header and making the full header not touch the sides of the screen */
 
+header {
+    display: flex;
+    padding: 40px 80px; /* spaces around the header both top/bottom and sides(left/right)*/
+  }
+
+/* Centering the image  */
+.header1 {
+    padding: 10px;
+    margin-bottom: 50px;
+    margin-left: -50px;
+}
+
+/* getting the contents of the ul in a straight line by flexing the display*/
+.header2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust spacing between list items */
+    width: 112%;
+    position: fixed;
+    right: -100%;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 170px;
+    z-index: 100;
+  }
+
+/* changing the anchor tag text colour */
+.header2 li a {
+    padding: 10px;
+    font-size: 14px; /* Slightly increase font size for readability */
+    /* text-transform: lowercase; to make the text all one way no matter how you wrote it in html */
+}
+
+
+/* changing the hoover color of the header */
+.header2 li a:hover, a:active {
+    color: #FF6565; /* Changes color to red on hover or active states */
+}
+
 /* styling the hamburger menu */
 
-
-/* Hamburger menu */
-.hamburger {
+/* Making the hamburger menu icons visible */
+.menu {
     display: block;
-    width: 30px;
-    height: 22px;
     cursor: pointer;
+    font-size: 1.5rem;
+    color: #dce0e3;
     position: relative;
 }
 
-.hamburger span {
-    display: block;
-    background-color: white;
-    height: 3px;
-    margin: 5px 0;
-    border-radius: 2px;
-    transition: all 0.3s ease;
+.menu {
+    top: 10%;
+    right: 88px;
+    transform: translateY(-100%);
 }
 
-/* Menu styles */
-.header2 {
-    list-style: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #444;
-    border-radius: 5px;
-    display: none; /* Hidden by default */
-    flex-direction: column;
-    padding: 10px 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-}
-
-.header2
- li {
-    margin: 10px 0;
-}
-
-.header2 a {
-    text-decoration: none;
-    color: white;
-    font-size: 16px;
-}
-
-/* Show menu when checkbox is checked */
-.menu-toggle:checked ~ .menu {
-    display: flex;
-}
-
-/* Hamburger animation for toggle */
-.menu-toggle:checked + .hamburger span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.menu-toggle:checked + .hamburger span:nth-child(2) {
-    opacity: 0;
-}
-
-.menu-toggle:checked + .hamburger span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+/* linking the hamburger/check icons with the list in header 2 */
+#check:checked~ .header2 {
+    right: 0;
 }
 
 /* header done and dusted */
 
 /* styling the main section still in section1 but the actual hero section */
 .hero {
-    margin: 10px;
-    display: flex;  
-    flex-direction: column;
-    width: 90%;
     margin: 0 auto;
-    text-align: center;
-}
-
-/* styling the h1 text div inside hero1 */
-.hero1 {
-    color: white;
-    font-size: 32px;
-    line-height: 1;
-    margin-top: 90px;
-    font-family: 'Source Sans Pro';
-    font-weight: bold;
-}
-
-/* styling the first p in the div inside hero1  */
-p {
-    color: rgba(255, 255, 255, 0.733);
-    font-size: 16px;
-    line-height: 1.5;
-    margin-top: 3px ;
-    font-weight: bold;
-    font-family:'Source Sans Pro';
 }
 
 /* styling the buttons */
 .first-button {
-    cursor: pointer;
-    background-color: #FF6565;
-    color: white;
-    font-size: 16px;
-    padding: 10px 20px;
-    margin-top: 70px;
-    border: none;
-    border-radius: 50px; /* Optional, for rounded corners */
-    cursor: pointer;
-    box-shadow: 5px -5px 30px rgba(0, 0, 0, 0.5); /* Prominent shadow */
-    transition: box-shadow 0.9s ease, transform 0.9s ease; /* Smooth hover effects *//
+    margin-top: 20px;
  }
 
  /* to create a lighter colour transition effect when hoovering over the button */
@@ -750,56 +731,58 @@ p {
  }
 
  /* styling the 2nd p in inside hero1  */
-.p-hero {
-    color: rgba(255, 255, 255, 0.665);
-    font-size: 16px;
-    line-height: 1.6;
-    align-items: center;
-    font-weight: normal;
-    font-family:'Source Sans Pro';
-    display: block; /* Ensures the text block behaves as a block element */  
-    text-align: justify; /* Aligns the text evenly on both sides */
-    margin-top: 75px;
-    margin-bottom: 90px;
-    text-align: center;
+.p-hero { 
+    margin-top: 25px;
 }
-/* section 1 done */
-
 
 /* styling section 2 */
+.section2 {
+    width: 100%;
+    height: 100%;
+}
+
 /* styling the div containing the icons and texts */
 .image-text {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 40px;
     padding: 15px 50px;
     text-align: center;
 }
 
 /* spacing the icons and the text */
 .icons {
-    display: flex;
-    flex-direction: column;
     gap: 25px;
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 
 .p2-2 {
-    margin-top: -15px;
+    margin-top: 35px;
 }
 /* section 2 done and dusted */
 
 /* styling section 3 */
+.section3-1 {
+    padding: 10px;
+}
+
 .image {
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
 }
+
+.image3 {
+    padding: 20px;
+}
+/* section 3 done */
 
 /* styling section 4 */
 .section4 {
     width: 100%;
-    margin-left: 50px;
+    height: 100%;
 }
+
 
  /* End of styling for mobile devices */
  }
