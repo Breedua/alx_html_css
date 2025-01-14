@@ -554,8 +554,6 @@ button:hover {
     /* keeping the background image centered */
     .section1 {
         background-position: center center; /* Keeps the image centered for mobile */
-        width: 100%;
-        height: 100%;
     }
 
     header {
@@ -612,11 +610,6 @@ button:hover {
 }
 
 /* styling section 3 */
-.section3 {
-    width: 100%;
-    height: 100%;
-}
-
 .image {
     padding: 40px 50px;
     text-align: center;
@@ -741,6 +734,11 @@ button:hover {
         max-width: 480px; /* Content width limit */
     }
 
+    /* Styling section 1 */
+    .section1 {
+        width: 100%;
+        height: 100%;
+    }
     /* styling the header */
 /* General styling of the header and making the full header not touch the sides of the screen */
 
@@ -875,10 +873,6 @@ header {
 }
 
 /* styling section 5 */
-.section5 {
-    width: 100%;
-    height: 100%;
-}
 
 .footer {
     width: 50%;
